@@ -11,4 +11,10 @@ public class CricketCoach implements Coach {
 		return "All the team member should play";
 	}
 
+	@Override
+	public String getDailyFortune() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

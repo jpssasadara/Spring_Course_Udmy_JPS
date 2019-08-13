@@ -12,11 +12,14 @@ public class HelloSpringApp {
 		Coach theCoach = context.getBean("myCoach",Coach.class);
 		//call the method on the bean
 		System.out.println(theCoach.getDailyWorkout());
+		//dependency injection 1st 
+		System.out.println(theCoach.getDailyFortune());
 		
 		//retrieve second bean from spring container
 		Coach theCricketCoach = context.getBean("myCricketCoach",Coach.class);
 		//call the method on the new bean
 		System.out.println(theCricketCoach.getDailyWorkout());
+		
 		//close
 		context.close();
 	}
