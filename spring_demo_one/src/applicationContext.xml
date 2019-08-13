@@ -14,9 +14,17 @@
     <!-- <bean id="myFortuneService"
     		class="com.luv2code.springdemo.HappyFortuneService">
     	</bean> -->
-    
+    	
+   <!-- This is how we create objects of TrackCoach class -->
+   <!-- object name is myCoach --> 
  	<bean id="myCoach"
  		class="com.luv2code.springdemo.TrackCoach">	 		
+ 	</bean>
+ 	
+ 	<!-- This is how we create objects of CricketCoach class --> 
+ 	<!-- object name is myCricketCoach -->
+ 	<bean id ="myCricketCoach"
+ 		class="com.luv2code.springdemo.CricketCoach">
  	</bean>
 
     <!--
