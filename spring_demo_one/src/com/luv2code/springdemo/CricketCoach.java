@@ -6,7 +6,7 @@ public class CricketCoach implements Coach {
 	
     //our setter method
 	public void setFortuneService(FortuneService fortuneService) {
-		System.out.println("fixing setter method");
+		System.out.println("fixing setter method on setter method");
 		this.fortuneService = fortuneService;
 	}
 

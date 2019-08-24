@@ -26,6 +26,8 @@
  	<!-- object name is myCricketCoach -->
  	<bean id ="myCricketCoach"
  		class="com.luv2code.springdemo.CricketCoach">
+ 		<!-- set up setter injection -->
+ 		<property name="fortuneService" ref="myFortune"/>
  	</bean>
 
     <!--
