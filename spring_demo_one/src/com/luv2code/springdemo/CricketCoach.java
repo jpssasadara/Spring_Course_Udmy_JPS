@@ -1,8 +1,13 @@
 package com.luv2code.springdemo;
 
 public class CricketCoach implements Coach {
-	public String getCricketCoach() {
-		return "All the team member should play";
+	//reference for aggrigation relationship 
+	private FortuneService fortuneService;
+	
+    //our setter method
+	public void setFortuneService(FortuneService fortuneService) {
+		System.out.println("fixing setter method");
+		this.fortuneService = fortuneService;
 	}
 
 	@Override
@@ -13,8 +18,8 @@ public class CricketCoach implements Coach {
 
 	@Override
 	public String getDailyFortune() {
-		// TODO Auto-generated method stub
-		return null;
+		// let's call the method of foutuneService class
+		return fortuneService.getFortune();
 	}
 
 }
