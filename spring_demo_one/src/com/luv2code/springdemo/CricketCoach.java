@@ -4,6 +4,28 @@ public class CricketCoach implements Coach {
 	//reference for aggrigation relationship 
 	private FortuneService fortuneService;
 	
+	//add new fields for email address and team
+	private String emailAddress;
+	public String getEmailAddress() {
+		return emailAddress;
+	}
+
+	public void setEmailAddress(String emailAddress) {
+		System.out.println("Cricket Coach : inside setter message set email address");
+		this.emailAddress = emailAddress;
+	}
+
+	public String getTeam() {
+		return team;
+	}
+
+	public void setTeam(String team) {
+		System.out.println("Cricket coach inside the setter method set team");
+		this.team = team;
+	}
+
+	private String team;
+	
     //our setter method
 	public void setFortuneService(FortuneService fortuneService) {
 		System.out.println("fixing setter method on setter method");
